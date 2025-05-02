@@ -4,7 +4,7 @@ Hooks.once("ready", () => {
     return;
   }
 
-  const socket = socketlib.registerModule("journal-passwort");
+  const socket = globalThis.socketlib.registerModule("journal-passwort");
 
   socket.register("passwortJournalFreigabe", async ({ playerId, journalName, playerName }) => {
     const journal = game.journal.getName(journalName);
