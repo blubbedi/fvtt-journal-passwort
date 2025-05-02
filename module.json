@@ -1,27 +1,14 @@
 {
-  "id": "journal-passwort",
-  "title": "Journal Passwortzugriff (automatisch)",
-  "description": "Ermöglicht passwortgeschützten Zugriff auf ein Journal über Socketlib. Nur Eingabefeld auf Spielerseite, alles andere übernimmt das Modul.",
-  "version": "1.0.0",
-  "authors": [
-    {
-      "name": "ChatGPT für Manus Kampagne"
-    }
-  ],
-  "compatibility": {
-    "minimum": "11",
-    "verified": "12"
-  },
-  "scripts": ["scripts/init.js"],
-  "relationships": {
-    "requires": [
-      {
-        "id": "socketlib",
-        "type": "module"
-      }
-    ]
-  },
+  "name": "fvtt-journal-passwort",
+  "title": "Journal Passwort Modul",
+  "description": "Zeigt ein Passwortfeld, um ein Journal zu entsperren.",
+  "version": "1.0.1",
+  "author": "blubbedi",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "12",
+  "scripts": ["scripts/main.js"],
+  "socket": true,
   "url": "https://github.com/blubbedi/fvtt-journal-passwort",
   "manifest": "https://blubbedi.github.io/fvtt-journal-passwort/module.json",
-  "download": "https://blubbedi.github.io/fvtt-journal-passwort/journal-passwort.zip"
+  "download": "https://blubbedi.github.io/fvtt-journal-passwort/module.zip"
 }
